@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Escritório{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'dist/css/adminlte.min.css' %}">
+</head>
+<body class="hold-transition sidebar-mini">
+        <div class="wrapper">
+            
+            <div class="content-wrapper">
+
+                <section class="content p-4">
+                    {% block content %}{% endblock %}
+                </section>
+            </div>
+
+        </div>
+    <script src="{% static 'dist/js/adminlte.min.js' %}"></script>
+</body>
+</html>
